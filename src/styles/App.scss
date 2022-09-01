@@ -1,0 +1,55 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+*{
+    padding:0;
+    font-family: poppins;
+    margin:0;
+    box-sizing: border-box;
+    background-color: aliceblue;
+}
+
+.container{
+    justify-content: center;
+    align-items: center;
+}
+.subcontainer{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    h1{
+        font-size:30px;
+        padding:8px;
+        margin-bottom: 20px;
+    }
+    p{
+        padding:0 10px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .search-container{
+        input{
+            text-align: left;
+            padding: 5px 10px;
+            border-radius:5px;
+            border:1px solid #555;
+            outline: none;
+        }
+        button{
+            padding:5px 10px;
+            margin-left:5px;
+            border:1px solid #555;
+            background-color: pink;
+            border-radius: 5px;
+            svg{
+                background-color: pink;
+            }
+        }
+    }
+}
+.resultSearch{
+    display: flex;
+    justify-content: center;
+    // align-items: center;
+
+}

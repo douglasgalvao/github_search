@@ -1,0 +1,65 @@
+.box-1 {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+  img {
+    border-radius: 10px;
+    width: 30%;
+  }
+}
+
+.infos {
+  display: grid;
+  p {
+    text-align: center;
+  }
+}
+
+.grid {
+  margin: 15px;
+  width: 90%;
+  display: grid;
+  flex-flow: column nowrap;
+  gap: 10px;
+  grid-template-areas: "name tag" "repo company" "followers follows" "location date" "bio bio";
+  @media(min-width:40rem){
+    grid-template-areas: "name tag repo" "company followers follows" "location date date" "bio bio bio";
+  }
+  .name {
+    grid-area: name;
+  }
+  .tag {
+    grid-area: tag;
+  }
+  .repo {
+    grid-area: repo;
+  }
+  .company {
+    grid-area: company;
+  }
+  .followers {
+    grid-area: followers;
+  }
+  .follows {
+    grid-area: follows;
+  }
+  .location {
+    grid-area: location;
+  }
+  .date {
+    grid-area: date;
+  }
+  .bio {
+    grid-area: bio;
+    padding:10px;
+  }
+}
+
+@media (min-width: 640px) {
+  .user-data p {
+    margin: 10px;
+    font-size: large;
+  }
+}
