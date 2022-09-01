@@ -3,5 +3,4 @@ export const validateData = (data) => {
         return "Não informado";
     }
     return data;
-    
 };
