@@ -1,3 +1,4 @@
+import "./index.scss";
 export const showRepos = (repo) => {
   if (!Object.keys(repo).length) {
     return null;
@@ -22,7 +23,7 @@ export const showRepos = (repo) => {
       </div>
       <div className="size">
         <p>
-          <strong>Size:</strong> {repo?.size}
+          <strong>Size:</strong> {repo?.size}Kb
         </p>
       </div>
       <div className="url">

@@ -30,30 +30,40 @@
   }
   .name {
     grid-area: name;
+    color:white;
+    
   }
   .tag {
     grid-area: tag;
+    color:white;
   }
   .repo {
     grid-area: repo;
+    color:white;
   }
   .company {
     grid-area: company;
+    color:white;
   }
   .followers {
     grid-area: followers;
+    color:white;
   }
   .follows {
     grid-area: follows;
+    color:white;
   }
   .location {
     grid-area: location;
+    color:white;
   }
   .date {
     grid-area: date;
+    color:white;
   }
   .bio {
     grid-area: bio;
+    color:white;
     padding:10px;
   }
 }

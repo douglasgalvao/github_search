@@ -1,27 +1,52 @@
 .repoName {
+  p {
+    color: white;
+  }
   padding: 0.5rem;
   text-align: center;
 }
 .repoLanguage {
+  p {
+    color: white;
+  }
   padding: 0.5rem;
   text-align: center;
 }
 .size {
+  p {
+    color: white;
+  }
   text-align: center;
 }
 .visibility {
+  p {
+    color: white;
+  }
   text-align: center;
 }
 .url {
+  p {
+    color: white;
+    a {
+      color: white;
+      font-size: large;
+    }
+  }
   text-align: center;
   overflow: hidden;
 }
 
 .visibility {
+  p {
+    color: white;
+  }
   padding-left: 3px;
   padding: 0.5rem 25px;
 }
 .division {
+  p {
+    color: white;
+  }
   height: 2px;
   width: 100vw;
   border-color: #0b0b0b;

@@ -59,7 +59,6 @@ function App() {
         {Object.keys(userData).length > 0 ? (
           <button onClick={seeMoreSubmit}>Info Repositories</button>
         ) : null}
-        {console.log(clickSeeMore)}
       </div>
       <UserRepos repos={userRepos} />
     </main>

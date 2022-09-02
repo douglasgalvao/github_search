@@ -5,25 +5,34 @@
     font-family: poppins;
     margin:0;
     box-sizing: border-box;
-    background-color: aliceblue;
 }
 
 .container{
+    // background: linear-gradient(225deg, rgba(65,74,77,1) 2%, rgba(123,150,157,1) 49%, rgba(19,23,24,1) 49%, rgba(63,76,79,1) 96%);
+    background:linear-gradient(90deg, #000c38 0%, #000000 100%);
     justify-content: center;
+    min-height: 100vh;
     align-items: center;
+    max-height: max-content;
 }
 .subcontainer{
+    background: linear-gradient(225deg, rgba(0,0,0,1) 46%, rgba(7, 3, 81, 0.505) 46%);
     display: flex;
     align-items: center;
     flex-direction: column;
     h1{
+        border: 1px groove #555;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
         font-size:30px;
         padding:8px;
+        color:white;
         margin-bottom: 20px;
     }
     p{
         padding:0 10px;
         text-align: center;
+        color:white;
         margin-bottom: 20px;
     }
 
@@ -34,6 +43,7 @@
             border-radius:5px;
             border:1px solid #555;
             outline: none;
+            margin-bottom: 20px;
         }
         button{
             padding:5px 10px;
@@ -49,6 +59,7 @@
 }
 .resultSearch{
     display: flex;
+    
     justify-content: center;
     // align-items: center;
 }
@@ -56,6 +67,7 @@
     display: flex;
     justify-content: center;
     button{
+        color:white;
         width: max-content;
         background-color: #555;
         border-radius: 5px;
