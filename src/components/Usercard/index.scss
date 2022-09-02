@@ -21,6 +21,7 @@
   margin: 15px;
   width: 90%;
   display: grid;
+  text-align: center;
   flex-flow: column nowrap;
   gap: 10px;
   grid-template-areas: "name tag" "repo company" "followers follows" "location date" "bio bio";

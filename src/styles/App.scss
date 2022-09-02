@@ -51,5 +51,16 @@
     display: flex;
     justify-content: center;
     // align-items: center;
-
+}
+.btnSabermais{
+    display: flex;
+    justify-content: center;
+    button{
+        width: max-content;
+        background-color: #555;
+        border-radius: 5px;
+        border: 0;
+        padding:5px;
+        margin-bottom: 10px;
+    }
 }

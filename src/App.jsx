@@ -1,16 +1,22 @@
 import { useState } from "react";
-import "./styles/App.scss"
+import "./styles/App.scss";
 import { BsGithub } from "react-icons/bs";
 import { GiMagnifyingGlass } from "react-icons/gi";
 import { UserCard } from "./components/Usercard";
+import { UserRepos } from "./components/UserRepos";
 import { getUserData } from "./service/getProfile";
+import { getMoreProfile } from "./service/getMoreProfile";
 function App() {
   const [userData, setUserData] = useState({});
   const [userName, setUserName] = useState(null);
+  const [userRepos, setUserRepos] = useState([]);
   const handleSubmit = async (username) => {
     const data = await getUserData(username);
-    console.log(data);
     setUserData(data);
+  };
+  const seeMoreSubmit = async () => {
+    const data = await getMoreProfile(userData.repos_url);
+    setUserRepos(data);
   };
 
   return (
@@ -40,8 +46,14 @@ function App() {
         </div>
       </div>
       <div className="resultSearch">
-      <UserCard userData={userData} />
+        <UserCard userData={userData} />
       </div>
+      <div className="btnSabermais">
+        {Object.keys(userData).length > 0 ? (
+          <button onClick={seeMoreSubmit}>Saber mais</button>
+        ) : null}
+      </div>
+      {Object.keys(userRepos).length ? <UserRepos repos={userRepos}/> : null}
     </main>
   );
 }
