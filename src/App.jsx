@@ -8,7 +8,7 @@ import { getUserData } from "./service/getProfile";
 import { getMoreProfile } from "./service/getMoreProfile";
 function App() {
   const [userData, setUserData] = useState({});
-  const [clickSeeMore,setClickSeeMore] = useState(false);
+  const [clickSeeMore, setClickSeeMore] = useState(false);
   const [userName, setUserName] = useState(null);
   const [userRepos, setUserRepos] = useState([]);
   const handleSubmit = async (username) => {
@@ -16,10 +16,14 @@ function App() {
     setUserData(data);
   };
   const seeMoreSubmit = async () => {
-    if(!clickSeeMore){setClickSeeMore(true)}
-    const data = await getMoreProfile(userData.repos_url);
-    setUserRepos(data);
+    if (!clickSeeMore) {
+      setClickSeeMore(true);
+      const data = await getMoreProfile(userData.repos_url);
+      setUserRepos(data);
+      return;
+    }
     setClickSeeMore(false);
+    setUserRepos([]);
   };
 
   return (
@@ -53,10 +57,11 @@ function App() {
       </div>
       <div className="btnSabermais">
         {Object.keys(userData).length > 0 ? (
-          <button onClick={seeMoreSubmit}>Saber mais</button>
+          <button onClick={seeMoreSubmit}>Info Repositories</button>
         ) : null}
+        {console.log(clickSeeMore)}
       </div>
-      <UserRepos repos={userRepos}/>
+      <UserRepos repos={userRepos} />
     </main>
   );
 }
