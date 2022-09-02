@@ -6,6 +6,7 @@ export const showRepos = (repo) => {
 
   return (
     <>
+    <div className="repo">
       <div className="repoName">
         <p>
           <strong>Repository:</strong> {repo?.name}
@@ -32,6 +33,7 @@ export const showRepos = (repo) => {
         </p>
       </div>
       <div className="division"></div>
+      </div>
     </>
   );
 };
