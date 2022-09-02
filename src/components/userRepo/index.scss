@@ -1,0 +1,31 @@
+.repoName {
+  padding: 0.5rem;
+  text-align: center;
+}
+.repoLanguage {
+  padding: 0.5rem;
+  text-align: center;
+}
+.size {
+  text-align: center;
+}
+.visibility {
+  text-align: center;
+}
+.url {
+  text-align: center;
+  overflow: hidden;
+}
+
+.visibility {
+  padding-left: 3px;
+  padding: 0.5rem 25px;
+}
+.division {
+  height: 2px;
+  width: 100vw;
+  border-color: #0b0b0b;
+  border: 1px;
+  background-color: #0b0b0b;
+  margin: 5px 0;
+}
