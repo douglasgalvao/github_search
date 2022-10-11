@@ -39,6 +39,7 @@ function App() {
           <input
             type="text"
             name="username"
+            value="douglasgalvao"
             id="githubuser"
             placeholder="Github username"
             onChange={(e) => setUserName(e.target.value)}
