@@ -9,7 +9,7 @@ import { getMoreProfile } from "./service/getMoreProfile";
 function App() {
   const [userData, setUserData] = useState({});
   const [clickSeeMore, setClickSeeMore] = useState(false);
-  const [userName, setUserName] = useState(null);
+  const [userName, setUserName] = useState("douglasgalvao");
   const [userRepos, setUserRepos] = useState([]);
   const handleSubmit = async (username) => {
     const data = await getUserData(username);
@@ -25,7 +25,6 @@ function App() {
     setClickSeeMore(false);
     setUserRepos([]);
   };
-  setUserName("douglasgalvao");
   
   return (
     <main className="container">
