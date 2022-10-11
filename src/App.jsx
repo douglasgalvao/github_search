@@ -9,7 +9,7 @@ import { getMoreProfile } from "./service/getMoreProfile";
 function App() {
   const [userData, setUserData] = useState({});
   const [clickSeeMore, setClickSeeMore] = useState(false);
-  const [userName, setUserName] = useState("");
+  const [userName, setUserName] = useState("douglasgalvao");
   const [userRepos, setUserRepos] = useState([]);
   const handleSubmit = async (username) => {
     const data = await getUserData(username);
@@ -40,7 +40,7 @@ function App() {
             type="text"
             name="username"
             id="githubuser"
-            value={username}
+            value={userName}
             placeholder="Github User"
             onChange={(e) => setUserName(e.target.value)}
           />
