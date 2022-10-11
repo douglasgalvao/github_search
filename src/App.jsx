@@ -25,7 +25,8 @@ function App() {
     setClickSeeMore(false);
     setUserRepos([]);
   };
-
+  setUserName("douglasgalvao");
+  
   return (
     <main className="container">
       <div className="subcontainer">
@@ -39,7 +40,6 @@ function App() {
           <input
             type="text"
             name="username"
-            value="douglasgalvao"
             id="githubuser"
             placeholder="Github username"
             onChange={(e) => setUserName(e.target.value)}
